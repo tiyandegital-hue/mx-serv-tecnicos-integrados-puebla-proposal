@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- BUSINESS_NAME = "Servicios Técnicos Integrados" — one swappable constant -->
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Llámanos o escríbenos — Servicios Técnicos Integrados</title>
+<meta name="description" content="Llámanos, escríbenos o visítanos en Agua Santa, Puebla. Respondemos 24/7. Envíanos un mensaje con tu solicitud de servicio.">
+<meta property="og:title" content="Contacto — Servicios Técnicos Integrados">
+<meta property="og:description" content="Llámanos, escríbenos o visítanos. Respondemos 24/7.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:0;background:var(--volt);color:#0B0D0A;padding:10px 16px;z-index:100;font-weight:700" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Servicios Técnicos Integrados — Inicio">
+      <span class="brand-mark" aria-hidden="true">STI</span>
+      <span class="brand-name">Servicios Técnicos Integrados</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 5h16M3 11h16M3 17h16" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="demo-bot.html">Bot WhatsApp</a>
+      <a href="emergencias.html">Emergencias</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+    <div class="header-cta">
+      <a class="header-phone" href="tel:+522226571548">+52 222 657 1548</a>
+      <a class="btn btn--sm" href="demo-bot.html">Cotizar</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Contacto · Puebla</p>
+      <h1>Contacto.</h1>
+      <p class="lede">Llámanos, escríbenos o visítanos. Respondemos 24/7.</p>
+    </div>
+  </section>
+
+  <div class="hazard" role="presentation" aria-hidden="true"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-block">
+            <span class="label">Llámanos</span>
+            <a href="tel:+522226571548">+52 222 657 1548</a>
+          </div>
+          <div class="contact-block">
+            <span class="label">Escríbenos</span>
+            <a href="mailto:arnulfocs21@gmail.com">arnulfocs21@gmail.com</a>
+          </div>
+          <div class="contact-block">
+            <span class="label">Visítanos</span>
+            <p>Agua Santa, Heroica Puebla de Zaragoza,<br>Puebla 72590, México</p>
+          </div>
+          <div class="contact-block">
+            <span class="label">Horario</span>
+            <p>Abierto 24 horas / 7 días</p>
+          </div>
+          <div class="contact-block">
+            <span class="label">Cobertura</span>
+            <p>Puebla y alrededores</p>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="contact-form" novalidate>
+            <h2>Envíanos un mensaje</h2>
+            <p>Cuéntanos qué necesitas y te respondemos para cotizar tu servicio.</p>
+            <div class="field">
+              <label for="cf-nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="cf-nombre" name="nombre" autocomplete="name" required>
+              <p class="error-msg">Escribe tu nombre completo.</p>
+            </div>
+            <div class="field">
+              <label for="cf-telefono">Teléfono / WhatsApp <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="cf-telefono" name="telefono" autocomplete="tel" inputmode="tel" required>
+              <p class="error-msg">Escribe un número válido de al menos 10 dígitos.</p>
+            </div>
+            <div class="field">
+              <label for="cf-servicio">Tipo de servicio <span class="req" aria-hidden="true">*</span></label>
+              <select id="cf-servicio" name="servicio" required>
+                <option value="">Elige una opción…</option>
+                <option value="electricidad">Electricidad</option>
+                <option value="plomeria">Plomería</option>
+                <option value="mantenimiento">Mantenimiento</option>
+                <option value="productos">Productos de limpieza</option>
+                <option value="emergencia">Emergencia</option>
+              </select>
+              <p class="error-msg">Elige el tipo de servicio.</p>
+            </div>
+            <div class="field">
+              <label for="cf-mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="cf-mensaje" name="mensaje" required></textarea>
+              <p class="error-msg">Describe tu solicitud en al menos 10 caracteres.</p>
+            </div>
+            <label class="consent" for="cf-consent">
+              <input type="checkbox" id="cf-consent" name="consent" required>
+              <span>Acepto que mis datos se usen para responder a mi solicitud. No se comparten con terceros.</span>
+            </label>
+            <button class="btn btn--block" type="submit">Enviar mensaje</button>
+            <p style="margin-top:16px;font-size:13px;color:var(--muted)">Al enviar aceptas nuestro <a href="legal.html" style="color:var(--volt)">aviso de privacidad</a>. Formulario de demostración: aún no está conectado a un correo; para una respuesta inmediata, llama o escribe por WhatsApp.</p>
+          </form>
+          <div class="form-success" id="form-success" role="status">
+            <h3>Mensaje recibido</h3>
+            <p>Gracias por escribirnos. Tu solicitud quedó registrada y te contactaremos para cotizar tu servicio. Si es una emergencia, <a href="tel:+522226571548" style="color:var(--volt)">llama ahora</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-placeholder reveal">
+        <p>Mapa — Agua Santa, Puebla<br>[Mapa de Google Maps — Agua Santa, Puebla]</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Servicios Técnicos Integrados</h4>
+        <p>Agua Santa, Heroica Puebla de Zaragoza,<br>Puebla 72590, México</p>
+        <p style="margin-top:12px"><a href="tel:+522226571548">+52 222 657 1548</a><br><a href="mailto:arnulfocs21@gmail.com">arnulfocs21@gmail.com</a></p>
+        <p style="margin-top:12px">Abierto 24/7</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="demo-bot.html">Bot WhatsApp</a></li>
+          <li><a href="emergencias.html">Emergencias</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer-list">
+          <li><a href="legal.html">Aviso de privacidad</a></li>
+          <li><a href="legal.html#terminos">Términos y condiciones</a></li>
+          <li><a href="legal.html#cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Servicios Técnicos Integrados</span>
+      <span>Sitio demo creado por Tiyan Digital</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-bar" role="navigation" aria-label="Acciones rápidas">
+  <a class="btn btn--ghost" href="tel:+522226571548"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Llamar</a>
+  <a class="btn" href="demo-bot.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12a9 9 0 1 1-4.4-7.7L21 3l-1.2 4.3A8.96 8.96 0 0 1 21 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 10.5c.8 2 2.5 3.7 4.5 4.5l1.5-1.5 2.5 1.5c-.5 1.5-1.5 2-3 1.5-3.5-1.5-6-4-7.5-7.5-.5-1.5 0-2.5 1.5-3l1.5 2.5-1 2Z" fill="currentColor"/></svg> WhatsApp — Cotizar</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
